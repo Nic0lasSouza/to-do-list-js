@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-color: #f55b64;
+    --second-color: #c2373f;
+    --neutro: #f9f9f9;
+    --black: #131730;
+    --font-titulo: "Krona One", sans-serif;
+    --font-text: "Numans", sans-serif;
+    --degrade-azul: linear-gradient(180deg, #000000 0%, #26327F 100%);
+}
+
+body{
+    background:var(--degrade-azul);
+    background-repeat: no-repeat;
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 440px;
+    align-items: center;
+    background-color: var(--neutro);
+    padding: 56px;
+    border-radius: 16px;
+}
+
+h2{
+    font-family: var(--font-titulo);
+    color: var(--primary-color);
+    font-size: 20px;
+    line-height: 33px;
+}
