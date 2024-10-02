@@ -1,3 +1,4 @@
+import { excluirItem } from "./deleteItem.js";
 import { verificarListaComprados } from "./verificarListaVazia.js";
 
 const listaDeCompras = document.getElementById('lista-de-compras');
@@ -65,6 +66,10 @@ export function criarItemDaLista(item){
     const imagemRemover = document.createElement('img')
     imagemRemover.src = 'img/delete.svg';
     imagemRemover.alt = 'Remover';
+
+    btnRemoverItem.addEventListener("click", function(){
+        excluirItem(itemDaLista)
+    })
 
     const imagemEditar = document.createElement('img')
     imagemEditar.src = 'img/edit.svg';

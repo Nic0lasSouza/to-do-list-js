@@ -2,7 +2,8 @@ const mensagemTextoVazia = document.getElementById("mensagem-vazia")
 const containerListaComprados = document.getElementById("container-lista-comprados")
 
 export function verificarLIstaVazia(lista){
-    if(lista.childElementCount == 0){
+    
+    if(lista.querySelectorAll("li").length == 0){
         mensagemTextoVazia.style.display = "block"
     }else{
         mensagemTextoVazia.style.display = "none"
